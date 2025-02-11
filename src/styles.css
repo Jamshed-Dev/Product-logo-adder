@@ -1,0 +1,323 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.App {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+.dark-mode .App {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+/* Input and Label Styles */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="color"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.dark-mode input[type="text"],
+.dark-mode input[type="number"],
+.dark-mode input[type="color"],
+.dark-mode input[type="file"],
+.dark-mode select {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Drop Zone Styles */
+.drop-zone {
+  border: 2px dashed #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+
+.drop-zone:hover {
+  border-color: #007bff;
+}
+
+.dark-mode .drop-zone {
+  border-color: #555;
+}
+
+/* Image List and Preview Styles */
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.image-item {
+  position: relative;
+  width: 100px; /* Adjust as needed */
+  height: 100px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.image-preview1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-actions {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.image-actions cloce {
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 2px 6px;
+}
+
+/* Preview Container Styles */
+.preview-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.image-preview {
+  width: 100px; /* Adjust as needed */
+  height: 100px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-images {
+  text-align: center;
+  width: 100%;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow: hidden;
+  position: relative;
+}
+
+.dark-mode .modal-content {
+  background-color: #1e1e1e;
+}
+
+.modal-image {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+
+.dark-mode .close-button {
+  color: #fff;
+}
+
+/* Range Input Styles */
+.range-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between slider and value */
+    margin-bottom: 15px;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #ddd;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+input[type="range"]:hover {
+  opacity: 1;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4); /* Added shadow */
+
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4); /* Added shadow */
+}
+
+/* Dark Mode Range Input */
+.dark-mode input[type="range"] {
+  background: #555;
+}
+
+.dark-mode input[type="range"]::-webkit-slider-thumb {
+  background: #007bff;
+    box-shadow: 0 2px 4px rgba(255,255,255,0.4); /* Added shadow */
+
+}
+
+.dark-mode input[type="range"]::-moz-range-thumb {
+  background: #007bff;
+  box-shadow: 0 2px 4px rgba(255,255,255,0.4); /* Added shadow */
+
+}
+
+.range-value {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Interactive Preview Styles */
+.interactive-preview {
+  position: relative; /* Needed for absolute positioning of the indicator */
+  max-width: 500px; /* Or whatever size you want */
+  margin-bottom: 20px;
+}
+
+.interactive-preview .preview-image.interactive {
+  cursor: crosshair; /* Change cursor on hover */
+  width: 100%; /* Make image responsive within its container */
+  height: auto;
+  display: block; /* Remove extra space below image */
+}
+
+.logo-indicator {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  pointer-events: none; /*  pass clicks through to the image */
+  opacity: 0.7;
+  box-sizing: border-box;
+
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="color"],
+  input[type="file"],
+  select {
+    width: 100%;
+  }
+    .interactive-preview {
+    max-width: 100%; /* Full width on smaller screens */
+  }
+}
