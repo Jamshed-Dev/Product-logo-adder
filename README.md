@@ -4,7 +4,7 @@ Effortlessly Add Custom Logos to Your Product Images
 
 ![App Preview](https://finesseglow.com/wp-content/uploads/2025/02/AXIS-Y-Dark-Spot-Correcting-Glow-Serum-50ml-09.png)
 
-## test URL
+## Test URL
 https://plogo.netlify.app/
 
 ## Overview
