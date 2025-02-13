@@ -3,7 +3,9 @@
 Effortlessly Add Custom Logos to Your Product Images
 
 ![App Preview](https://finesseglow.com/wp-content/uploads/2025/02/AXIS-Y-Dark-Spot-Correcting-Glow-Serum-50ml-09.png)
-*[Replace with your actual screenshot URL]*
+
+## test URL
+https://plogo.netlify.app/
 
 ## Overview
 The **Product Logo Adder** is a React-based web application designed to simplify batch image processing for e-commerce businesses and digital marketers. It allows users to add custom logos, watermarks, and backgrounds to multiple images simultaneously with real-time previews and professional results.
